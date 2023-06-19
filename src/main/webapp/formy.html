@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CUSTOMER DETAILS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="formy" >
+<form action="add.jsp"  method="POST">
+
+  <div class="form">
+ <div class="contents">
+  <h1>Customer Details</h1>
+  </div>
+  <table align="center" cellpadding = "10">
+  <tr>
+  <td>
+ 
+    <label>
+    Name
+<br>
+        <input type="text" name="name"   required />
+    </label>
+   </td>
+   <td>
+     <label>
+Date of Birth
+<br>
+        <input type="date" name="dob" required />
+    </label>
+    </td>
+    <td>
+    
+    <label>
+ Phone Number
+ <br>
+        <input type="tel" name="phone"  required />
+    </label>
+    </td>
+   
+   <td>
+       <label>
+Car Brand
+</label>
+<br>
+          <select name="brand" id="brand" " required > 
+          <option value=""  >SELECT</option>
+<option value="Bugatti" >Bugatti</option>
+<option value="Ferrari">Ferrari</option>
+<option value="Lamborgini">Lamborgini</option>
+<option value="McLaren">McLaren</option>
+<option value="Jaguar">Jaguar</option>
+<option value="BMW">BMW</option>
+<option value="Mercedes Benz">Mercedes Benz</option>
+<option value="Range Rover">Range Rover</option>
+</select>
+</td>
+</tr>
+</table>
+<center>
+<table>
+<tr>
+<td>
+
+
+       <label>
+ Renting Date And Time 
+ <br>
+        <input type="datetime-local" name="rdate" required />
+    </label>
+    </td>
+ 
+    <td>
+       <label>
+ Returning Date And Time 
+ <br>
+        <input type="datetime-local" name="sdate"  />
+    </label>
+    </td>
+
+    <td>
+
+    
+       <label>
+Duration
+ <br>
+        <input type="text" value=0 name="dura"  />
+    </label>
+    </td>
+    </tr>
+
+    </table>
+    </center>
+
+  </div>
+
+  <center>
+  <button class="button" type="submit" value="Submit">Submit</button>
+</center>
+</form>
+
+</body>
+
+</html>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UPDATE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="update" >
+<form action="update.jsp"  method="POST">
+<div class="form">
+ <div class="contents">
+  <h1>Update Details</h1>
+  </div>
+  <table  align="center" cellpadding = "10">
+  <tr>
+  <td>
+ 
+    <label>
+    Name
+<br>
+        <input name="name"  type="text" required />
+    </label>
+   </td>
+   <td>
+       <label>
+Car Brand
+<br>
+          <select name="brand" required > 
+          <option value="None"  >SELECT</option>
+<option value="Bugatti" >Bugatti</option>
+<option value="Ferrari">Ferrari</option>
+<option value="Lamborgini">Lamborgini</option>
+<option value="McLaren">McLaren</option>
+<option value="Jaguar">Jaguar</option>
+<option value="BMW">BMW</option>
+<option value="Mercedes Benz">Mercedes Benz</option>
+<option value="Range Rover">Range Rover</option>
+</select>
+</label>
+</td>
+
+
+
+    </tr>
+
+</table>
+
+    <table  align="center" cellpadding = "10">
+    <tr>
+    <td>
+       <label>
+ Returning Date And Time 
+ <br>
+        <input type="datetime-local" name="sdate"  />
+    </label>
+    </td>
+
+    <td>
+
+    
+       <label>
+Duration
+ <br>
+        <input type="text" value=0 name="dura"  />
+    </label>
+    </td>
+    </tr>
+ 
+    </table>
+
+
+
+  <center>
+  <button class="button" type="submit" value="Submit">Submit</button>
+</center>
+</form>
+</div>
+</body>
+</html>
